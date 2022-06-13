@@ -33,16 +33,20 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: jadiy
+    repository: jx3
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: kilidev.com
     kind: ingress
     namespaceSubDomain: -tekton-pipelines.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: jadiy
   repository: bucketrepo
   secretStorage: local
   vault: {}
